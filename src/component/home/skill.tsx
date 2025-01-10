@@ -6,28 +6,38 @@ import {
   
 } from "../icons";
 
+
+type Skills = {
+  React: string;
+  TailwindCSS: string;
+  JavaScript: string;
+};
+
 export default function Skill() {
-  const skills: any = {
+  const skills: Skills = {
     React: `import React from 'react';\n\nfunction App() {\n  return <h1>Hello, React!</h1>;\n}\n\nexport default App;`,
     TailwindCSS: `<div class="bg-blue-500 text-white font-bold py-2 px-4 rounded">\n  Hello, Tailwind CSS!\n</div>`,
     JavaScript: `const greet = () => {\n  console.log("Hello, JavaScript!");\n};\n\ngreet();`,
   };
 
-  const [currentSkill, setCurrentSkill] = useState("React");
-  const [currentCode, setCurrentCode] = useState(skills[currentSkill]);
 
-  useEffect(() => {
-    const skillKeys = Object.keys(skills);
-    let index = 0;
+    const [currentSkill, setCurrentSkill] = useState<keyof Skills>('React');
+    const [currentCode, setCurrentCode] = useState<string>(skills[currentSkill]);
+  
+    useEffect(() => {
+      const skillKeys = Object.keys(skills) as (keyof Skills)[];
+      let index = 0;
+  
+      const interval = setInterval(() => {
+        index = (index + 1) % skillKeys.length;
+        setCurrentSkill(skillKeys[index]);
+        setCurrentCode(skills[skillKeys[index]]);
+      }, 3000);
+  
+      return () => clearInterval(interval);
+    }, []);
 
-    const interval = setInterval(() => {
-      index = (index + 1) % skillKeys.length;
-      setCurrentSkill(skillKeys[index]);
-      setCurrentCode(skills[skillKeys[index]]);
-    }, 3000);
 
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <section className="py-32" id="skill">

@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { ArrowIcon, GitIcon } from "../icons";
+import { ArrowIcon} from "../icons";
 
 export default function Banner() {
   return (
@@ -23,7 +23,7 @@ export default function Banner() {
               Hello there! 👋🏻
             </h3>
             <h1 className="text-5xl font-extrabold text-gray-500 leading-tight">
-              I'm <span className="text-blue-600">Kartheeswari E</span>
+              I&apos;m <span className="text-blue-600">Kartheeswari E</span>
             </h1>
             <p className="text-lg text-gray-500 mt-4">
               A passionate developer crafting amazing web experiences.
