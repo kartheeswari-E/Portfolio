@@ -5,10 +5,17 @@ import { ArrowIcon, GitIcon } from "../icons";
 export default function Banner() {
   return (
     <section
-      id="hero"
-      className="flex flex-col items-center justify-between py-16 gap-10 mt-10 text-center sm:text-left sm:mt-0 md:flex-row"
-    >
-      <div className="container mx-auto px-6">
+    id="hero"
+    className="flex flex-col items-center justify-between py-16 gap-10 mt-10 text-center sm:text-left sm:mt-0 md:flex-row"
+    style={{
+      backgroundImage: "url('/images/shape.png')", // Replace with your image path
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+    }}
+  >
+  
+      <div className=" container mx-auto px-6">
         <div className="flex flex-wrap items-center">
           {/* Left Content */}
           <div className="w-full lg:w-1/2">
@@ -51,7 +58,7 @@ export default function Banner() {
              
              
               <Image
-                src="/images/hero.png"
+                src="/images/heros.png"
                 alt="Kartheeswari E"
                 layout="fill"
                 objectFit="cover"

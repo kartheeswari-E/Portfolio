@@ -10,22 +10,26 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Left Section */}
           <div className="space-y-6">
-          <span className="text-indigo-400 text-xl">About Me
-          </span>
-            <h4 className="text-2xl font-semibold">
-          
-             <span className="mt-2"> Full Stack and Frontend Developer.</span>
-            </h4>
-            <p className="text-gray-400  text-justify">
-              A passionate Full stack developer with the goal of working on
-              projects that solve problems with thoughtful UI design, creating
-              intuitive, dynamic user experiences powered by strong backends. I
-              primarily work with the MERN stack among the full-stack
-              technologies. The satisfaction that I get while working and
-              completing every project motivates me to do more and more. And I
-              believe, I have done something creatively.
-            </p>
-          </div>
+    <span className="text-indigo-400 text-xl">About Me</span>
+    <h4 className="text-2xl font-semibold">
+      <span className="mt-2">Full Stack and Frontend Developer.</span>
+    </h4>
+    <p className="text-gray-400 text-justify">
+      A passionate Full stack developer with the goal of working on projects
+      that solve problems with thoughtful UI design, creating intuitive,
+      dynamic user experiences powered by strong backends. I primarily work
+      with the MERN stack among the full-stack technologies. The satisfaction
+      that I get while working and completing every project motivates me to do
+      more and more. And I believe, I have done something creatively.
+    </p>
+
+    {/* Centered Button */}
+    <div className="flex">
+      <button className="bg-gray-800 text-gray-300 px-4 py-2 rounded-md shadow-md hover:bg-gray-700">
+        More...
+      </button>
+    </div>
+  </div>
 
           {/* Right Section */}
           <div className="w-full max-w-3xl mx-auto">
