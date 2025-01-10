@@ -2,15 +2,8 @@
 
 import { useState, useEffect } from "react";
 import {
-  ExpressIcon,
-  GraphQLIcon,
-  JavaScriptIcon,
-  MongoDBIcon,
-  NextJSIcon,
-  NodeJSIcon,
   ReactIcon,
-  TailwindCSSIcon,
-  TypeScriptIcon,
+  
 } from "../icons";
 
 export default function Skill() {

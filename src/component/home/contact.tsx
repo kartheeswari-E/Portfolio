@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { CallIcon, ClockIcon, EmailIcon, GitIcon, LocationIcon } from "../icons";
+import { CallIcon, ClockIcon, EmailIcon,  LocationIcon } from "../icons";
 
 export default function ContactInfo() {
   return (

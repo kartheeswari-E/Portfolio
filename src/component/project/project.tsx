@@ -27,7 +27,7 @@ export default function Project() {
             Work. Hobby. Open Source.
           </h1>
           <p className="text-lg text-gray-300">
-            I'm obsessed with side projects and building in public. Here you can
+            I&apos;m obsessed with side projects and building in public. Here you can
             navigate to <span className="text-green-500">14 different</span>{" "}
             websites, apps, and libraries I built. Some projects are still active,
             others have been discontinued.

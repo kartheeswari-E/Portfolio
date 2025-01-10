@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import Script from 'next/script'
 import { Inter } from "next/font/google";
 import Header from "@/component/layout/header";
 import "@/assets/globals.css";
@@ -7,14 +6,7 @@ import "@/assets/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const metadata: Metadata = {
-  // metadataBase: new URL(siteConfig.url),
-  // title: siteConfig.name,
-  // description: siteConfig.description,
-  // icons: {
-  //   icon: "/favicon.ico"
-  // }
-};
+
 
 export const viewport: Viewport = {
   colorScheme: "dark light",
