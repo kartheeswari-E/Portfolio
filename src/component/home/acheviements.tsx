@@ -7,26 +7,22 @@ export default function AnimatedSection() {
   ];
 
   const timelineData = [
-   
     {
       title: "Employee of the Month",
       date: "August 2024",
       description: "Recognized for outstanding performance and teamwork.",
     },
-
     {
       title: "Employee of the Month",
       date: "April 2024",
       description: "Recognized for outstanding performance and teamwork.",
     },
-
     {
       title: "Lead Promotion",
       date: "April 2024",
-      badge: "Present",
+      badge: "promotion",
       description: "Promoted to Team Lead for exemplary leadership skills.",
     },
-   
   ];
 
   return (
@@ -34,10 +30,12 @@ export default function AnimatedSection() {
       {/* Glassy Center Content */}
       <h1 className="text-3xl md:text-4xl font-extrabold">Achievements</h1>
       <div className="relative z-10 w-full md:w-3/4 lg:w-1/2 backdrop-blur-md rounded-lg p-6 md:p-8 text-center shadow-lg">
-       
         <ul role="list" className="space-y-6 mt-6">
           {timelineData.map((item, index) => (
-            <li key={index} className="relative flex flex-col gap-y-2 md:flex-row md:gap-x-4">
+            <li
+              key={index}
+              className="relative flex flex-col gap-y-2 md:flex-row md:gap-x-4"
+            >
               <div className="flex-auto p-3 rounded-md ring-1 ring-inset ring-gray-700">
                 <div className="flex justify-between gap-x-4">
                   <div className="text-sm leading-5 text-gray-500">
@@ -56,9 +54,10 @@ export default function AnimatedSection() {
                   </time>
                 </div>
                 {item.description && (
-                  <p className="text-xs leading-6 text-gray-500">{item.description}</p>
+                  <div className="flex items-start">
+                    <p className="text-xs leading-6 text-gray-500">{item.description}</p>
+                  </div>
                 )}
-              
               </div>
             </li>
           ))}
@@ -66,7 +65,7 @@ export default function AnimatedSection() {
       </div>
 
       {/* Left Side Images */}
-      <div className="absolute left-0 top-1/2 transform -translate-y-1/2 flex flex-col space-y-6 p-4">
+      <div className="absolute left-0 top-1/2 transform -translate-y-1/2 flex-col space-y-6 p-4 hidden md:flex">
         <div className="relative w-40 h-40 md:w-64 md:h-64">
           <img
             src={images[0]}
@@ -84,7 +83,7 @@ export default function AnimatedSection() {
       </div>
 
       {/* Right Side Images */}
-      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 flex flex-col space-y-6 p-4">
+      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 flex-col space-y-6 p-4 hidden md:flex">
         <div className="relative w-40 h-40 md:w-64 md:h-64">
           <img
             src={images[2]}
