@@ -9,24 +9,15 @@ import {
   GitIcon,
   HomeIcon,
   LinkedinIcon,
-  MoonIcon,
   ProjectIcon,
   SkillIcon,
-  SunIcon,
 } from "../icons";
 
 export default function Header() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    if (isDarkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  };
+
 
   useEffect(() => {
     const handleScroll = () => {

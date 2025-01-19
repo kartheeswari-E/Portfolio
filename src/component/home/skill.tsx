@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import {
-  BootstrapIcon,
   ExpressIcon,
   GraphQLIcon,
   JavaScriptIcon,

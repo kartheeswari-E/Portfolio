@@ -206,6 +206,7 @@ export function ExpressIcon(props: React.SVGProps<SVGSVGElement>) {
   height="256" 
   fill="none" 
   viewBox="0 0 256 256"
+  {...props}
 >
  
   <path 
