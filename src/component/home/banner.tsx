@@ -54,7 +54,7 @@ export default function Banner() {
             <div className="absolute inset-0 w-80 h-80 md:w-96 md:h-96 bg-gradient-to-tr from-blue-500 to-blue-300 rounded-full blur-2xl opacity-10 -z-10"></div>
 
             {/* Circular Image */}
-            <div className="relative w-72 h-72 bg-black/20 md:w-100 md:h-100 rounded-full overflow-hidden shadow-xl">
+            <div className="relative w-72 h-72 bg-transparent lg:bg-black/20 md:w-100 md:h-100 rounded-full overflow-hidden shadow-xl">
              
              
               <Image

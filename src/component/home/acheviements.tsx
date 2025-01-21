@@ -26,10 +26,10 @@ export default function AnimatedSection() {
   ];
 
   return (
-    <section className="relative w-full min-h-screen flex flex-col items-center justify-center text-white overflow-hidden p-4">
+    <section className="relative w-full  flex flex-col items-center justify-center text-white overflow-hidden py-16">
       {/* Glassy Center Content */}
       <h1 className="text-3xl md:text-4xl font-extrabold">Achievements</h1>
-      <div className="relative z-10 w-full md:w-3/4 lg:w-1/2 backdrop-blur-md rounded-lg p-6 md:p-8 text-center shadow-lg">
+      <div className="relative z-10 w-full md:w-3/4 lg:w-1/2  lg:backdrop-blur-md rounded-lg p-6 md:p-8 text-center shadow-lg">
         <ul role="list" className="space-y-6 mt-6">
           {timelineData.map((item, index) => (
             <li

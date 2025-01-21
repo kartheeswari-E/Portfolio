@@ -122,7 +122,7 @@ export default function Skill() {
 
 
   return (
-    <section className="py-32" id="skill">
+    <section className="py-4" id="skill">
       <div className="container mx-auto px-4">
         <div className="mb-4 space-y-2 text-center lg:text-left">
           <h2 className="text-lg text-indigo-400 font-bold md:text-xl">
@@ -140,7 +140,7 @@ export default function Skill() {
                   <h5 className="text-gray-300 mb-4">Frontend Development</h5>
                   <ul className="flex flex-wrap gap-4 ">
                     <li className="flex flex-col items-center">
-                      <div className="flex flex-col items-center justify-center w-12 h-12 p-2 bg-white/20 rounded-lg">
+                      <div className="flex flex-col items-center justify-center w-12 h-12  bg-white/20 rounded-lg">
                         <NextJSIcon />
                       </div>
                     </li>
@@ -156,7 +156,7 @@ export default function Skill() {
                       </div>
                     </li>
                     <li className="flex flex-col items-center">
-                      <div className="flex flex-col items-center justify-center w-12 h-12 p-2 bg-white/20 rounded-lg">
+                      <div className="flex flex-col items-center justify-center w-12 h-12  bg-white/20 rounded-lg">
                         <TypeScriptIcon />
                       </div>
                     </li>
