@@ -48,12 +48,12 @@ export default function Header() {
          >
       {/* Top Navbar */}
       <div className="max-w-screen-xl flex flex-wrap items-center py-4 justify-between mx-auto">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-black text-white">
             Kartheeswari
           </span>{" "}
           <BlueCircleTickIcon />
-        </a>
+        </Link>
 
         {/* Menu items hidden on mobile */}
         <div
@@ -102,34 +102,42 @@ export default function Header() {
 
         {/* Icons always visible */}
         <div className="flex gap-2 items-center">
-          <button
-            className="relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-8 max-w-[32px] h-8 max-h-[32px] rounded-lg text-xs text-white hover:bg-white/10 active:bg-white/30"
-            type="button"
-          >
-            <span className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
-              <GitIcon />
-            </span>
-          </button>
-          <button
-            className="relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-8 max-w-[32px] h-8 max-h-[32px] rounded-lg text-xs text-white hover:bg-white/10 active:bg-white/30"
-            type="button"
-          >
-            <span className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
-              <LinkedinIcon />
-            </span>
-          </button>
+  {/* GitHub Link */}
+  <Link
+    href="https://github.com/kartheeswari-E"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-8 max-w-[32px] h-8 max-h-[32px] rounded-lg text-xs text-white hover:bg-white/10 active:bg-white/30"
+  >
+    <span className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+      <GitIcon />
+    </span>
+  </Link>
 
-          <button
-  onClick={() => window.location.href = "mailto:karthiieeswari@gmail.com"}
-  className="relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-8 max-w-[32px] h-8 max-h-[32px] rounded-lg text-xs text-white hover:bg-white/10 active:bg-white/30"
-  type="button"
->
-  <span className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
-    <EmailIcon />
-  </span>
-</button>
+  {/* LinkedIn Link */}
+  <Link
+    href="https://www.linkedin.com/in/kartheeswari-e-107746226/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-8 max-w-[32px] h-8 max-h-[32px] rounded-lg text-xs text-white hover:bg-white/10 active:bg-white/30"
+  >
+    <span className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+      <LinkedinIcon />
+    </span>
+  </Link>
 
-        </div>
+  {/* Email Button */}
+  <button
+    onClick={() => window.location.href = "mailto:karthiieeswari@gmail.com"}
+    className="relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-8 max-w-[32px] h-8 max-h-[32px] rounded-lg text-xs text-white hover:bg-white/10 active:bg-white/30"
+    type="button"
+  >
+    <span className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+      <EmailIcon />
+    </span>
+  </button>
+</div>
+
       </div>
 
       {/* Bottom Mobile Menu */}
