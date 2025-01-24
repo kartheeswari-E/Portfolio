@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { ArrowIcon} from "../icons";
+import Link from "next/link";
 
 export default function Banner() {
   return (
@@ -29,8 +30,8 @@ export default function Banner() {
             Senior Full Stack Developer with over 2 years of experience, leading teams and delivering 6+ successful live projects.
             </p>
             <div className="mt-6">
-  <a
-    href="#"
+  <Link target="_blank"
+    href="https://drive.google.com/file/d/15XEqBAoesZkYaQ5Z-3UGp5C9BG4-0APA/view?usp=sharing"
     className="relative inline-flex items-center px-4 py-2 text-blue-600 border-2 border-blue-600 text-sm font-semibold rounded-full hover:text-white hover:bg-blue-600 transition-all duration-300 ease-in-out group"
   >
     <span className="absolute inset-0 w-full h-full bg-blue-600 opacity-0 rounded-full group-hover:opacity-20 transition-opacity duration-300"></span>
@@ -41,7 +42,7 @@ export default function Banner() {
         className="group-hover:fill-white transition-colors duration-300"
       />
     </i>
-  </a>
+  </Link>
 
 </div>
 
