@@ -115,7 +115,7 @@ export default function Journey() {
           </time>
         </div>
         <p className="flex items-center text-xs leading-6 text-gray-500">
-          I joined as a  Full Stack developer @ Cron24 Technologies{" "}
+          I joined as a  Full Stack Developer @ Cron24 Technologies{" "}
         </p>
       </div>
     </li>
@@ -141,7 +141,7 @@ export default function Journey() {
       <div className="flex-auto p-3 rounded-md ring-1 ring-inset ring-gray-700">
         <div className="flex justify-between gap-x-4">
           <div className="py-0.5 text-sm leading-5 text-gray-500">
-            <span className="font-medium text-white">Full Stact Developer</span>
+            <span className="font-medium text-white">Full Stack Developer</span>
           </div>
           <time
             dateTime="2023-07-01T00:00"
@@ -151,7 +151,7 @@ export default function Journey() {
           </time>
         </div>
         <p className="flex items-center text-xs leading-6 text-gray-500">
-          I worked as a Full Stact Developer @ Infodazz
+          I worked as a Full Stack Developer @ Infodazz
         </p>
       </div>
     </li>

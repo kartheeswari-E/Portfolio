@@ -43,7 +43,7 @@ export default function Project() {
         title: "Hyra Hotel – Online Hotel Booking",
         description:
          "Hyra Hotel is an online hotel/room booking application with three distinct roles: user, admin, and hotel owner (or vendor). Hotel owners can list their properties on this platform, while users can browse and book rooms seamlessly, completing payments through the app. Users also have the option to modify or cancel their bookings, with refunds processed based on the cancellation policy. A search feature is provided, allowing users to search based on their preferences, such as the number of adults, children, check-in and check-out dates, and location.",
-        image: "/images/hyrahotel.png",
+        image: "/images/hyrahotels.png",
         tags: ["Stripe", "Nodemailer","Authentication","Context"],
         status: "live",
       },
